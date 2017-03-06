@@ -1,9 +1,9 @@
 import React from 'react';
 import { Router, Route, IndexRedirect } from 'react-router';
 
-import App from './App';
-import ComingSoon from './components/ComingSoon/ComingSoon';
-import NotFound from './components/NotFound/NotFound';
+import App from './components/App/index';
+import ComingSoon from './components/ComingSoon/index';
+import NotFound from './components/NotFound/index';
 
 const Routes = (props) => (
 	<Router {...props}>
