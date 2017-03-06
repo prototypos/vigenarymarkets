@@ -4,15 +4,14 @@ import './App.css';
 
 class App extends Component {
   render() {
+    // console.log(this);
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Vigenary Markets</h2>
         </div>
-        <p className="App-intro">
-          Invitations going out soon.  Stay tuned...
-        </p>
+        {this.props.children}
       </div>
     );
   }
