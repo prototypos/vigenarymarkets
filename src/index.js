@@ -1,11 +1,22 @@
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { browserHistory } from 'react-router';
-
-import Routes from './routes';
+import App from './components/App';
 import './index.css';
 
 ReactDOM.render(
-  <Routes history={browserHistory} />,
+  <App />,
   document.getElementById('root')
 );
+*/
+
+import AppContainer from './containers/AppContainer';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<AppContainer />, document.getElementById('root'));
+
+import AlbumsActions from './actions/AlbumsActions';
+
+AlbumsActions.getAlbums();
+
