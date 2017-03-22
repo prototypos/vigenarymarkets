@@ -18,6 +18,89 @@
   font-size: large;
 }
 
+.App-buttons {
+  background-color: #222;
+  height:80px;
+  width:100%;
+}
+
+.spacer {
+  height:64px;
+  width:16px;
+}
+
+button {
+  height:64px;
+  width:64px;
+  background-color: #222;
+  border: none;
+  padding: 0px;
+  margin:8px;
+  margin:8px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+#football {
+  background-image: url("./buttons/football.png");
+}
+
+#football:active {
+    background-image: url("./buttons/football-active.png");
+}
+
+#basketball {
+  background-image: url("./buttons/basketball.png");
+}
+
+#basketball:active {
+    background-image: url("./buttons/basketball-active.png");
+}
+
+#baseball {
+  background-image: url("./buttons/baseball.png");
+}
+
+#baseball:active {
+    background-image: url("./buttons/baseball-active.png");
+}
+
+#hockey {
+  background-image: url("./buttons/hockey.png");
+}
+
+#hockey:active {
+    background-image: url("./buttons/hockey-active.png");
+}
+
+#soccer {
+  background-image: url("./buttons/soccer.png");
+}
+
+#soccer:active {
+    background-image: url("./buttons/soccer-active.png");
+}
+
+#tennis {
+  background-image: url("./buttons/tennis.png");
+}
+
+#tennis:active {
+    background-image: url("./buttons/tennis-active.png");
+}
+
+#golf {
+  background-image: url("./buttons/golf.png");
+}
+
+#golf:active {
+    background-image: url("./buttons/golf-active.png");
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

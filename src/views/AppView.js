@@ -11,6 +11,15 @@ function AppView(props) {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Vigenary Markets</h2>
         </div>
+        <div className="App-buttons">
+          <button id="football" onClick={props.onButtonClicked} />
+          <button id="basketball" onClick={props.onButtonClicked} />
+          <button id="baseball" onClick={props.onButtonClicked} />
+          <button id="hockey" onClick={props.onButtonClicked} />
+          <button id="soccer" onClick={props.onButtonClicked} />
+          <button id="tennis" onClick={props.onButtonClicked} />
+          <button id="golf" onClick={props.onButtonClicked} />
+        </div>
       </div>
     );
 }
