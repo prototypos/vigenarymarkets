@@ -1,21 +1,23 @@
+h3 {
+  margin: 8px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 30s linear;
-  height: 80px;
+  height: 32px;
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  padding: 4px;
   color: white;
 }
 
 .App-intro {
-  font-size: large;
 }
 
 .App-buttons {
@@ -25,11 +27,11 @@
 
 .App-date {
   background-color: #222;
-  padding: 8px;
+  padding: 4px;
 }
 
 input{
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 button {
@@ -37,7 +39,6 @@ button {
   width:32px;
   background-color: #222;
   border: none;
-  padding: 0px;
   margin:4px;
   cursor: pointer;
   cursor: hand;

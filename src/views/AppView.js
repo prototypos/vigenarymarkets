@@ -9,7 +9,7 @@ function AppView(props) {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Vigenary Markets</h2>
+          <h3>Welcome to Vigenary Markets</h3>
       </div>
         <div className="App-buttons">
           <button id="sports" title="All Sports" onClick={props.onButtonClicked} />
