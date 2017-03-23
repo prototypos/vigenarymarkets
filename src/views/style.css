@@ -45,6 +45,14 @@ button:focus, button:active {
   outline: none;
 }
 
+#sports {
+  background-image: url("./buttons/sports.png");
+}
+
+#sports:active {
+    background-image: url("./buttons/sports-active.png");
+}
+
 #football {
   background-image: url("./buttons/football.png");
 }

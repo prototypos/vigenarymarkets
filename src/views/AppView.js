@@ -12,13 +12,14 @@ function AppView(props) {
           <h2>Welcome to Vigenary Markets</h2>
         </div>
         <div className="App-buttons">
-          <button id="football" onClick={props.onButtonClicked} />
-          <button id="basketball" onClick={props.onButtonClicked} />
-          <button id="baseball" onClick={props.onButtonClicked} />
-          <button id="hockey" onClick={props.onButtonClicked} />
-          <button id="soccer" onClick={props.onButtonClicked} />
-          <button id="tennis" onClick={props.onButtonClicked} />
-          <button id="golf" onClick={props.onButtonClicked} />
+          <button id="sports" title="All Sports" onClick={props.onButtonClicked} />
+          <button id="football" title="Football" onClick={props.onButtonClicked} />
+          <button id="basketball" title="Basketball" onClick={props.onButtonClicked} />
+          <button id="baseball" title="Baseball" onClick={props.onButtonClicked} />
+          <button id="hockey" title="Hockey" onClick={props.onButtonClicked} />
+          <button id="soccer" title="Soccer" onClick={props.onButtonClicked} />
+          <button id="tennis" title="Tennis" onClick={props.onButtonClicked} />
+          <button id="golf" title="Golf" onClick={props.onButtonClicked} />
         </div>
       </div>
     );
