@@ -8,7 +8,7 @@ import AlbumsActions from '../actions/AlbumsActions';
 import GalleryActions from '../actions/GalleryActions';
 */
 
-import moment from 'moment';
+// import moment from 'moment';
 
 function getStores() {
   return [
@@ -28,7 +28,7 @@ function getState() {
     onGetAlbums: AlbumsActions.getAlbums,
     onChangeGallery: GalleryActions.changeGallery
   */
-    startDate: moment(),
+    startDate: new Date(),
   };
 }
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 import '../index.css';
 import logo from './logo.png';
@@ -24,14 +22,7 @@ function AppView(props) {
           <button id="golf" title="Golf" onClick={props.onButtonClicked} />
         </div>
         <div className="App-date">
-          <DatePicker
-            selected={props.startDate}
-            onChange={props.onChangeDate} 
-            peekNextMonth 
-            showMonthDropdown 
-            showYearDropdown 
-            dropdownMode="select" 
-          />
+           <input type="date" name="date" />
         </div>
       </div>
     );
