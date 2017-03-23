@@ -20,8 +20,17 @@
 
 .App-buttons {
   background-color: #222;
-  height:40px;
+  height:48px;
   width:100%;
+}
+
+.App-date {
+  background-color: #222;
+  padding: 8px;
+}
+
+input{
+  border-radius: 5px;
 }
 
 button {
@@ -30,8 +39,7 @@ button {
   background-color: #222;
   border: none;
   padding: 0px;
-  margin:4px;
-  margin:4px;
+  margin:8px;
   cursor: pointer;
   cursor: hand;
 }
