@@ -1,8 +1,8 @@
 import AppView from '../views/AppView';
 import {Container} from 'flux/utils';
 
-import AlbumsStore from '../stores/AlbumsStore';
-import GalleryStore from '../stores/GalleryStore';
+import DateStore from '../stores/DateStore';
+import DateActions from '../actions/DateActions';
 /*
 import AlbumsActions from '../actions/AlbumsActions';
 import GalleryActions from '../actions/GalleryActions';
@@ -12,8 +12,7 @@ import GalleryActions from '../actions/GalleryActions';
 
 function getStores() {
   return [
-    AlbumsStore,
-    GalleryStore,
+    DateStore
   ];
 }
 
@@ -28,7 +27,8 @@ function getState() {
     onGetAlbums: AlbumsActions.getAlbums,
     onChangeGallery: GalleryActions.changeGallery
   */
-    startDate: new Date(),
+    onChangeDate: DateActions.changeDate,
+    date: DateStore.getState().date,
   };
 }
 

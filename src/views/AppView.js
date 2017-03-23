@@ -9,7 +9,7 @@ function AppView(props) {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h3>Welcome to Vigenary Markets</h3>
+          <h2>Vigenary Markets</h2>
       </div>
         <div className="App-buttons">
           <button id="sports" title="All Sports" onClick={props.onButtonClicked} />
@@ -22,7 +22,7 @@ function AppView(props) {
           <button id="golf" title="Golf" onClick={props.onButtonClicked} />
         </div>
         <div className="App-date">
-           <input type="date" name="date" />
+           <input type="date" name="date" value={props.date} onChange={(evt) => props.onChangeDate(evt)} />
         </div>
       </div>
     );
