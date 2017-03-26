@@ -1,8 +1,8 @@
 import {ReduceStore} from 'flux/utils';
-import DateActionTypes from '../actions/DateActionTypes';
+import SelectActionTypes from '../actions/SelectActionTypes';
 import AppDispatcher from '../dispatchers/AppDispatcher';
 
-class AlbumsStore extends ReduceStore {
+class SelectStore extends ReduceStore {
   constructor() {
     super(AppDispatcher);
   }
@@ -18,8 +18,11 @@ class AlbumsStore extends ReduceStore {
     }   
     if (mm<10) {  
       mm='0'+mm;  
-    }   
-    return { "date": yyyy + "-" + mm + "-" + dd };
+    }
+    return {
+      "sport": "sports",
+      "date": yyyy + "-" + mm + "-" + dd
+    }
   }
 
   reduce(state, action) {
@@ -28,14 +31,24 @@ class AlbumsStore extends ReduceStore {
     console.log(action);
   
     switch (action.type) {
-      case DateActionTypes.CHANGE_DATE:
+      case SelectActionTypes.CHANGE_DATE:
         console.log(action.evt.target.value);
-        return { "date": action.evt.target.value };
+        return {
+          "sport": state.sport,
+          "date": action.evt.target.value
+        };
         
+      case SelectActionTypes.CHANGE_SPORT:
+        console.log(action.evt.target.value);
+        return {
+          "sport": action.evt.target.value,
+          "date": state.date
+        };
+
       default:
         return state;
     }
   }
 }
 
-export default new AlbumsStore();
+export default new SelectStore();

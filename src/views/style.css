@@ -48,71 +48,132 @@ button:focus, button:active {
   outline: none;
 }
 
-#sports {
+.sports {
   background-image: url("./buttons/sports.png");
 }
 
-#sports:active {
+.sports:active {
     background-image: url("./buttons/sports-active.png");
 }
 
-#football {
+.football {
   background-image: url("./buttons/football.png");
 }
 
-#football:active {
+.football:active {
     background-image: url("./buttons/football-active.png");
 }
 
-#basketball {
+.basketball {
   background-image: url("./buttons/basketball.png");
 }
 
-#basketball:active {
+.basketball:active {
     background-image: url("./buttons/basketball-active.png");
 }
 
-#baseball {
+.baseball {
   background-image: url("./buttons/baseball.png");
 }
 
-#baseball:active {
+.baseball:active {
     background-image: url("./buttons/baseball-active.png");
 }
 
-#hockey {
+.hockey {
   background-image: url("./buttons/hockey.png");
 }
 
-#hockey:active {
+.hockey:active {
     background-image: url("./buttons/hockey-active.png");
 }
 
-#soccer {
+.soccer {
   background-image: url("./buttons/soccer.png");
 }
 
-#soccer:active {
+.soccer:active {
     background-image: url("./buttons/soccer-active.png");
 }
 
-#tennis {
+.tennis {
   background-image: url("./buttons/tennis.png");
 }
 
-#tennis:active {
+.tennis:active {
     background-image: url("./buttons/tennis-active.png");
 }
 
-#golf {
+.golf {
   background-image: url("./buttons/golf.png");
 }
 
-#golf:active {
+.golf:active {
     background-image: url("./buttons/golf-active.png");
+}
+
+input.date {
+  color: #fff;
+  width: 140px;
+  font-size: 14px;
+  padding: 10px 0 10px 10px;
+  border: 0 !important;
+  /* needed */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* SVG background image */
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%238C98F2'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 4px) 17px;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+input.date:focus {
+  outline:none;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.sport-selector input{
+    margin:4px;
+    padding:0px;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.sport-selector input:active +.sport-label{opacity: .9;}
+.sport-selector input:checked +.sport-label{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.sport-label{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:32px;height:32px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.sport-label:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+* { font-family:monospace; }
+span.cc{ color:#6d84b4 }
