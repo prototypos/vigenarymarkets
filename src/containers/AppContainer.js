@@ -3,16 +3,13 @@ import {Container} from 'flux/utils';
 
 import SelectStore from '../stores/SelectStore';
 import SelectActions from '../actions/SelectActions';
-/*
-import AlbumsActions from '../actions/AlbumsActions';
-import GalleryActions from '../actions/GalleryActions';
-*/
-
-// import moment from 'moment';
+import MatchStore from '../stores/MatchStore';
+//import MatchActions from '../actions/MatchActions';
 
 function getStores() {
   return [
-    SelectStore
+    SelectStore,
+    MatchStore
   ];
 }
 
@@ -29,8 +26,11 @@ function getState() {
   */
     onChangeDate: SelectActions.changeDate,
     onChangeSport:SelectActions.changeSport,
+    // onPickMatch:MatchActions.pickMatch,
+
     date: SelectStore.getState().date,
     sport: SelectStore.getState().sport,
+    matches: MatchStore.getState().matches,
   };
 }
 

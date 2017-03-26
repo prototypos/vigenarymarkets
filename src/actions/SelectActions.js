@@ -1,22 +1,26 @@
 import SelectActionTypes from './SelectActionTypes';
+import SelectStore from '../stores/SelectStore';
+import MatchActions from './MatchActions';
 import AppDispatcher from '../dispatchers/AppDispatcher';
 // import $ from 'jquery';
 
 const Actions = {
-  changeDate(evt) {
+  changeDate(date) {
   	console.log("SelectActions.changeDate: dispatch(CHANGE_DATE)");
     AppDispatcher.dispatch({
       type: SelectActionTypes.CHANGE_DATE,
-      evt
+      date
     });
+    MatchActions.getMatches(date, SelectStore.getState().sport);
   },
 
-  changeSport(evt) {
+  changeSport(sport) {
   	console.log("SelectActions.changeDate: dispatch(CHANGE_SPORT)");
     AppDispatcher.dispatch({
       type: SelectActionTypes.CHANGE_SPORT,
-      evt
+      sport
     });
+    MatchActions.getMatches(SelectStore.getState().date, sport);
   },
 
 };

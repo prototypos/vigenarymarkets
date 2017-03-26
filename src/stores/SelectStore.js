@@ -32,16 +32,16 @@ class SelectStore extends ReduceStore {
   
     switch (action.type) {
       case SelectActionTypes.CHANGE_DATE:
-        console.log(action.evt.target.value);
+        console.log(action.date);
         return {
           "sport": state.sport,
-          "date": action.evt.target.value
+          "date": action.date
         };
         
       case SelectActionTypes.CHANGE_SPORT:
-        console.log(action.evt.target.value);
+        console.log(action.sport);
         return {
-          "sport": action.evt.target.value,
+          "sport": action.sport,
           "date": state.date
         };
 
