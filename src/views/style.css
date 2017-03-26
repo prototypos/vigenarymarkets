@@ -139,8 +139,9 @@ input.date:focus {
 }
 
 .sport-selector input{
-    margin:4px;
+    margin:0px;
     padding:0px;
+    width:0px;
     -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
@@ -158,6 +159,7 @@ input.date:focus {
     background-repeat:no-repeat;
     display:inline-block;
     width:32px;height:32px;
+    margin:4px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
