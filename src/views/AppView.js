@@ -34,7 +34,9 @@ function AppView(props) {
         </div>
         <div className="App-matches">
           <ul>
-
+            {props.matches.map(({key, value}) => (
+                <li key={key}>{value}</li>
+            ))}
           </ul>
         </div>
       </div>

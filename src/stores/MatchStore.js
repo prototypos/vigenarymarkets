@@ -8,9 +8,9 @@ class SelectStore extends ReduceStore {
   }
 
   getInitialState() {
-    return [];
+    return { "matches": [] };
   }
-  
+
   reduce(state, action) {
     console.log("MatchStore: reduce()...");
     console.log(state);

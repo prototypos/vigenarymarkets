@@ -12,6 +12,16 @@ const Actions = {
     });
     // get matches here...
     console.log("date: " + date + ", sport: " + sport);
+    setTimeout(() => {
+      AppDispatcher.dispatch({
+        type: MatchActionTypes.SET_MATCHES,
+        matches: [
+          { "key": 1001, "value": "UCLA v Kentucky"},
+          { "key": 1002, "value": "Gonzaga v West Virginia"},
+          { "key": 1003, "value": "Florida v Wisconsin"},
+        ]
+      })
+    }, 1000);
   },
 };
 
